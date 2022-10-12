@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background-color: rgb(115, 194, 236);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.6em;
+        }
+        div {
+            background-color: rgba(0, 0, 0, 0.237);
+            width: 200px;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos DOM</h1>
+    <p>
+        Aqui vai o resultado
+    </p>
+    <p>
+        Aprendendo a usar <strong>DOM</strong> em JavaScript
+    </p>
+    <div id="msg">
+        Clique em mim
+    </div>
+    <script>
+        /*
+                Por marca
+                        getElementsByTagName()
+
+            var corpo = window.document.body
+            var p1 = window.document.getElementsByTagName('p')[0]
+            corpo.style.background = 'black'
+            p1.style.color = 'white'
+
+                Por ID
+                        getElementById()
+
+            var d = window.document.getElementById('msg')
+            d.style.background = 'greem'
+            d.innerText = 'Nova msg de exemplo'
+
+                Por nome
+                        getElementsByName
+
+            var p1 = window.document.getElementsByName('p')[0]
+            p1.style.color = 'white'
+
+                Por classe
+                        getElementsByClassName
+
+            var p1 = window.document.getElementsByClassName('p')[0]
+            p1.style.color = 'blue'
+
+                Por seletor
+                        querySelector()  um elemento
+                        querySelectorAll()   mais de um elemento
+
+            var d = window.document.querySelector('div#msg')
+            d.style.background = 'green'
+
+        */
+
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0]
+        var d = window.document.querySelector('div#msg')
+        d.style.background = 'green'
+        d.innerText = 'Nova msg de exemplo'
+    </script>
+</body>
+</html>
