@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: rgb(0, 0, 71);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+}
+
+header{
+    text-align: center;
+    color: white;
+}
+
+main{
+    width: 50%;
+    margin: auto;
+}
+
+#tarefas{
+    background-color: rgba(0, 0, 115, 0.525);
+    height: 40px;
+    width: 70%;
+    font-size: 1em;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#registrar{
+    background-color: rgb(0, 123, 29);
+    height: 55px;
+    font-size: 1em;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+}
